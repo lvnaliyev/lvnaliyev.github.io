@@ -1,9 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>elvin</title>
-  </head>
-  <body>
-    <h1>this is my page</h1>
-  </body>
+  <html>
+    <head>
+      <link
+        href="/wordpress/wp-admin/css/flontpage.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <script
+        type="text/javascript"
+        src="/wordpress/wp-admin/js/jquery-1.10.2.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="/wordpress/wp-admin/js/jquery.horizonScroll.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="/wordpress/wp-admin/js/jquery.touchSwipe.js"
+      ></script>
+    </head>
+
+    <div id="warpper">
+      <div id="myphoto"></div>
+
+      <nav class="accordionmenu">
+        <ul class="accmenu">
+          <li>
+            <input type="checkbox" id="item1" />
+            <label for="item1">
+              <!--  <div class="toggleIcon"></div>-->
+              <a href="" style="color: #515151">Vue.js</a>
+            </label>
+            <!--  <div class="options">
+<ul>
+                  <li><a href='/horizontal/company-top/'>COMPANY TOP</a></li>
+                
+                </ul>
+              </div> -->
+          </li>
+
+          <li>
+            <input type="checkbox" id="item2" /><label for="item2">
+              <a href="" style="color: #515151"></a>
+            </label>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger">
+        <div class="bline1"></div>
+        <div class="bline2"></div>
+        <div class="bline3"></div>
+      </div>
+      <script
+        type="text/javascript"
+        src="/wordpress/wp-admin/js/accordionT.js"
+      ></script>
+      <section data-role="section" id="section-section1"></section>
+      <section data-role="section" id="section-section2"></section>
+      <section data-role="section" id="section-section3"></section>
+      <section data-role="section" id="section-section4"></section>
+      <section data-role="section" id="section-section5"></section>
+
+      <script type="text/javascript">
+        $("section").horizon();
+      </script>
+    </div>
+
+    <div id="pgcnt">
+      <div id="hoge"></div>
+      <div id="cntpage"><!-- Count Page View --></div>
+      <div class="line" id="target"></div>
+      <div class="bar"></div>
+      <div id="subtextbox"></div>
+    </div>
+    <script
+      type="text/javascript"
+      src="/wordpress/wp-admin/js/accordionT.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="/wordpress/wp-admin/js/countPage.js"
+    ></script>
+  </html>
 </html>
