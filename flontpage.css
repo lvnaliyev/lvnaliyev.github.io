@@ -97,6 +97,7 @@ section {
   z-index: 8;
   height: 100%;
   width: 100%;
+  background-repeat:no-repeat;
   background-position: top;
   background-image: url(/img/lvn4.jpg);
 }
