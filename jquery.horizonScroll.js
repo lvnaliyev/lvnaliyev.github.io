@@ -11,6 +11,7 @@
  */
 
 // Semicolon to prevent breakage with concatenation.
+;
 (function ($) {
     'use strict';
 
@@ -106,9 +107,6 @@
         fnCallback: function (i) {
         }
     };
-    
-    
-   
 
     function isNumeric(num) {
         return !isNaN(num)
@@ -137,14 +135,6 @@
         }
 
         console.log('Scroll to: ' + index);
-        
-        //insert code
-        var cuntTest = Number(index);
-         //sample code send html 
-         $("#hoge").html(cuntTest);
-         //end
-         
-         
         $.fn.horizon.defaults.i = index;
 
         var $section = $($.fn.horizon.defaults.sections[index]);
