@@ -19,14 +19,16 @@
     <a href="#">Contact</a>
   </div>
 </div>
-<span style="font-size:30px;cursor:pointer" onclick="openBurger()">&#9868;</span>
+<span id="burgIcon" style="font-size:30px;cursor:pointer" onclick="openBurger()">&#9868;</span>
 <style>
-  
+  #burIcon{
+  z-index: 999;
+  }
   .overlay {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 999;
+  z-index: 1;
   top: 10;
   right: 10;
   background-color: rgba(0.01,0.01,0.01, 0.9);
