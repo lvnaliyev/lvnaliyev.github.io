@@ -10,36 +10,75 @@
 
     <div id="warpper">
       <div id="myphoto"></div>
+      
+<div id="burger" class="overlay">
+  <a href="javascript:void(0)" class="closeBur" onclick="closeBurger()">&#9876;</a>
+  <div class="navLinks">
+    <a href="#">About me</a>
+    <a href="#">Miniature</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openBurger()">&#9868;</span>
+<style>
+  
+  .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 10;
+  right: 10;
+  background-color: rgba(0.01,0.01,0.01, 0.9);
+  overflow-x: hidden;
+  transition: 0.6s ease-in-out;
+}
 
-      <nav class="accordionmenu">
-        <ul class="accmenu">
-          <li>
-            <input type="checkbox" id="item1" />
-            <label for="item1">
-              <!--  <div class="toggleIcon"></div>-->
-              <a href="" style="color: #515151">Vue.js</a>
-            </label>
-            <!--  <div class="options">
-<ul>
-                  <li><a href='/horizontal/company-top/'>COMPANY TOP</a></li>
-                
-                </ul>
-              </div> -->
-          </li>
+.navLinks {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
 
-          <li>
-            <input type="checkbox" id="item2" /><label for="item2">
-              <a href="" style="color: #515151"></a>
-            </label>
-          </li>
-        </ul>
-      </nav>
-      <div class="burger">
-        <div class="bline1"></div>
-        <div class="bline2"></div>
-        <div class="bline3"></div>
-      </div>
-      <script type="text/javascript" src="/accordionT.js"></script>
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 28px;
+  color: grey;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closeBur {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closeBur {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+      </style>
+<script>
+function openBurger() {
+  document.getElementById("burger").style.width = "100%";
+}
+function closeBurger() {
+  document.getElementById("burger").style.width = "0%";
+}
+</script>
       <section data-role="section" id="section-section1"></section>
       <section data-role="section" id="section-section2"></section>
       <section data-role="section" id="section-section3"></section>
