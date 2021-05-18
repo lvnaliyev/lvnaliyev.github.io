@@ -317,11 +317,12 @@ font-size: 26px;
 }
 
 .skills ul li {
+  list-style:none;
 text-decoration:none;
   color: darkgrey;
 }
 
-#first:hover i::before {
+#first:hover::before {
   content: attr(data-tooltip-first);
   position: absolute;
   left: 70%;
