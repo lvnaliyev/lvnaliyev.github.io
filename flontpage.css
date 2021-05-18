@@ -273,7 +273,7 @@ font-size: 90px;
 .p1 p {
   position: fixed;
   width: 30%;
-  top: 68%;
+  top: 58%;
   left: 60%;
   line-height: 1.8;
   transform: translateX(0px);
@@ -281,7 +281,7 @@ font-size: 90px;
   opacity: 1;
   font-weight: 300;
   z-index: 9;
-  animation: protext 6s ease-in-out;
+  animation: protext 4s ease-in-out;
 }
 
 .p1 a {
