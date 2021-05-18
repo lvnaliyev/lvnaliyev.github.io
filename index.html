@@ -9,6 +9,7 @@
     </head>
    
 <div id="preloader">
+  <div id="welcome"> WELCOME! </div>
 <div class="spinner"></div> 
 </div>
      <script>
@@ -19,6 +20,19 @@ window.addEventListener('load', function(){
     </script>
     
     <style> 
+      #welcome {
+      position:absolute;
+        top: 25%;
+        transform: translateX (-65px);
+        color: lightgray;
+       animation: fade-in 2s ease-in;
+      }
+      
+      @keyframes fade-in {
+        from {translateX(-50px);}
+        to {translateX (0px);}
+      }
+      
 .spinner{
     width: 80px;
     height: 80px;
