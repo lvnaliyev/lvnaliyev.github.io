@@ -544,6 +544,8 @@ text-decoration:none;
 .apBg01 {
   top: -68.5px;
   left: 127.5px;
+  background-image: url ('/lvn4.jpg');
+  background-size:cover;
   animation: bg1 5s linear, bg 32s infinite linear 5s;
 }
 
