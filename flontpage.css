@@ -304,7 +304,20 @@ section {
   background: white;
   animation: p10back 1.8s ease-out;
 }
+.skills {
+margin-top: 30px;
+  
+}
 
+.skills h1 {
+font-size: 26px;
+  color: darkblue;
+}
+
+.skills ul li {
+text-decoration:none;
+  color: darkgrey;
+}
 @keyframes p10back {
   0% {left:50%;}
   100%{left:0%;}
