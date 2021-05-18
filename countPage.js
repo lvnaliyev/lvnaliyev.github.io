@@ -42,7 +42,7 @@ $(window).scroll(function () {
       //alert("1です");
       cntpage.innerHTML = "3 / 3";
       subtextbox.innerHTML =
-        "<div class='p20'><div class='p20p1'></div><div class='scrolldown'></div><div class='dot'></div></div>";
+        "<div class='p20'><div class='p20p1'> <div class='skills'> <h1> Front end Developer </h1> <ul> <li id='first' data-tooltip-first='2 years experience'> JavaScript </li> <li id='second' data-tooltip-second='5 years experience' > HTML, CSS </li><li id='third' data-tooltip-third='2 years experience'> jQuery </li> <li id='third' data-tooltip-third='7 month experience'> React Native </li> </ul></div></div><div class='scrolldown'></div><div class='dot'></div></div>";
       element.className = "line40";
     }
   }, 100);
