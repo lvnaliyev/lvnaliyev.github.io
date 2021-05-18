@@ -13,9 +13,8 @@
 </div>
      <script>
       var preloader = document.getElementById("preloader");
-
 window.addEventListener('load', function(){
-  preloader.style.display = 'none';
+  preloader.classList.add('preloader-done')
 })
     </script>
     
@@ -32,7 +31,7 @@ window.addEventListener('load', function(){
     left:0;
     right: 0;
     margin: auto;
-    animation: spin 1.5s infinite linear;
+    animation: spin 1s infinite linear;
 }
 
 @keyframes spin {
@@ -48,10 +47,17 @@ window.addEventListener('load', function(){
   width:100%;
   background:rgba(0, 0, 0, 1);
   z-index: 9999;
+  transition: opacity 2s ease-out;
   position:fixed;
   left:0;
   top:0;
  }
+      
+      .preloader-done {
+      opacity:0;
+        pointer-events:none;
+      }
+      
     </style>
     
     <div id="warpper">
