@@ -282,12 +282,14 @@ section {
   top: 0%;
   left: 50%;
   width: 100%;
-  max-width: 2596px;
-  height: 1080px;
+  height: 100%;
   background: white;
-  animation: p10 1.8s ease-out;
+  animation: p10back 1.8s ease-out;
 }
-
+@keyframes p10back {
+  0% {left:50%;}
+  100%{left:0%;}
+}
 @keyframes p10 {
   0% {
     left: 0%;
