@@ -310,10 +310,17 @@ margin-top: 30px;
 }
 
 .skills h1 {
-  margin-top: 30px;
+  margin-top: 5%;
   margin-left: 10%;
 font-size: 26px;
   color: darkblue;
+}
+
+.skills h2 {
+margin-top:1%;
+  margin-bottom: 1%;
+  font-size: 22px;
+  color: #eee;
 }
 
 .skills ul li {
@@ -323,15 +330,14 @@ text-decoration:none;
   color: darkgrey;
 }
 
-#first:hover::before {
+#first:hover::after {
   content: attr(data-tooltip-first);
   position: relative;
   right: 30px;
   width: 200px;
   height: fit-content;
-  color: #34495;
+  color: #34495e;
   padding: 10px 20px;
-  padding-top: 20px;
   border-radius: 4px;
   overflow:hidden;
   text-align:left;
@@ -340,14 +346,87 @@ text-decoration:none;
   
 }
 
-#second{
+#first:hover::after {
+  content: attr(data-tooltip-second);
+  position: relative;
+  right: 30px;
+  width: 200px;
+  height: fit-content;
+  color: #34495e;
+  padding: 10px 20px;
+  border-radius: 4px;
+  overflow:hidden;
+  text-align:left;
+  background-color:white;
+  filter:drop-shadow(0px 1px 3px rgba(82,65,65,.7));
+  
 }
 
-#third{
+#first:hover::after {
+  content: attr(data-tooltip-third);
+  position: relative;
+  right: 30px;
+  width: 200px;
+  height: fit-content;
+  color: #34495e;
+  padding: 10px 20px;
+  border-radius: 4px;
+  overflow:hidden;
+  text-align:left;
+  background-color:white;
+  filter:drop-shadow(0px 1px 3px rgba(82,65,65,.7));
+  
 }
 
-#fourth {
+#first:hover::after {
+  content: attr(data-tooltip-fourth);
+  position: relative;
+  right: 30px;
+  width: 200px;
+  height: fit-content;
+  color: #34495e;
+  padding: 10px 20px;
+  border-radius: 4px;
+  overflow:hidden;
+  text-align:left;
+  background-color:white;
+  filter:drop-shadow(0px 1px 3px rgba(82,65,65,.7));
+  
 }
+
+#first:hover::after {
+  content: attr(data-tooltip-five);
+  position: relative;
+  right: 30px;
+  width: 200px;
+  height: fit-content;
+  color: #34495e;
+  padding: 10px 20px;
+  border-radius: 4px;
+  overflow:hidden;
+  text-align:left;
+  background-color:white;
+  filter:drop-shadow(0px 1px 3px rgba(82,65,65,.7));
+  
+}
+#first:hover::after {
+  content: attr(data-tooltip-six);
+  position: relative;
+  right: 30px;
+  width: 200px;
+  height: fit-content;
+  color: #34495e;
+  padding: 10px 20px;
+  border-radius: 4px;
+  overflow:hidden;
+  text-align:left;
+  background-color:white;
+  filter:drop-shadow(0px 1px 3px rgba(82,65,65,.7));
+  
+}
+
+
+
 @keyframes p10back {
   0% {left:50%;}
   100%{left:0%;}
