@@ -22,13 +22,16 @@
 <span id="burgIcon" style="font-size:30px;cursor:pointer" onclick="openBurger()">&#9868;</span>
 <style>
   #burgIcon{
+    position: fixed;
+    top: 10%;
+    right: 10%;
   z-index: 99999;
   }
   .overlay {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 999999;
+  z-index: 1;
   top: 0;
   left: 0;
   background-color: rgba(0.01,0.01,0.01, 0.9);
