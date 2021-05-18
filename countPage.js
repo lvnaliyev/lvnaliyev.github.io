@@ -42,7 +42,7 @@ $(window).scroll(function () {
       //alert("1です");
       cntpage.innerHTML = "3 / 3";
       subtextbox.innerHTML =
-        "<div class='p20'><div class='p20p1'><div class='p1box'><div class='p2t'>My Interests</div><div class='p2'>I love playing chess and </br> my rating is 1436 on chess.com. </br> A big fan of Morphy and Tal. </br> Chess gave me problem solving skills </br> and strong mind with concentration </div></div></div><div class='scrolldown'></div><div class='dot'></div></div>";
+        "<div class='p20'><div class='p20p1'></div><div class='scrolldown'></div><div class='dot'></div></div>";
       element.className = "line40";
     }
   }, 100);
