@@ -4,7 +4,17 @@ body {
   height: 100%;
   overflow: hidden;
 }
-
+#warpper {
+  width: 100%;
+  height: 100%;
+}
+.rightbox {
+  width: 100%;
+  height: 100%;
+}
+.clear {
+  clear: both;
+}
 
 /* SECTIONS START HERE */
 section {
