@@ -310,6 +310,8 @@ margin-top: 30px;
 }
 
 .skills h1 {
+  margin-top: 30px;
+  margin-left: 10%;
 font-size: 26px;
   color: darkblue;
 }
@@ -317,6 +319,33 @@ font-size: 26px;
 .skills ul li {
 text-decoration:none;
   color: darkgrey;
+}
+
+#first:hover i::before {
+  content: attr(data-tooltip-first);
+  position: absolute;
+  left: 70%;
+  top:70%;
+  width: 200px;
+  height: fit-content;
+  color: #34495;
+  padding: 10px 20px;
+  padding-top: 20px;
+  border-radius: 4px;
+  overflow:hidden;
+  text-align:left;
+  background-color:white;
+  filter:drop-shadow(0px 1px 3px rgba(82,65,65,.7));
+  
+}
+
+#second{
+}
+
+#third{
+}
+
+#fourth {
 }
 @keyframes p10back {
   0% {left:50%;}
