@@ -137,6 +137,7 @@ section {
   left: 50%;
   width: 3px;
   height: 50px;
+  z-index: 9999999;
   background-color: black;
 }
 .dot {
