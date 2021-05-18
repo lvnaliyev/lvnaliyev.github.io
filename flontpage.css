@@ -333,7 +333,6 @@ text-decoration:none;
 #first:hover::after {
   content: attr(data-tooltip-first);
   position: relative;
-  right: 30px;
   width: 200px;
   height: fit-content;
   color: #34495e;
@@ -349,7 +348,6 @@ text-decoration:none;
 #second:hover::after {
   content: attr(data-tooltip-second);
   position: relative;
-  right: 30px;
   width: 200px;
   height: fit-content;
   color: #34495e;
@@ -365,7 +363,6 @@ text-decoration:none;
 #third:hover::after {
   content: attr(data-tooltip-third);
   position: relative;
-  right: 30px;
   width: 200px;
   height: fit-content;
   color: #34495e;
@@ -381,7 +378,6 @@ text-decoration:none;
 #fourth:hover::after {
   content: attr(data-tooltip-fourth);
   position: relative;
-  right: 30px;
   width: 200px;
   height: fit-content;
   color: #34495e;
@@ -397,7 +393,6 @@ text-decoration:none;
 #five:hover::after {
   content: attr(data-tooltip-five);
   position: relative;
-  right: 30px;
   width: 200px;
   height: fit-content;
   color: #34495e;
@@ -412,7 +407,6 @@ text-decoration:none;
 #six:hover::after {
   content: attr(data-tooltip-six);
   position: relative;
-  right: 30px;
   width: 200px;
   height: fit-content;
   color: #34495e;
