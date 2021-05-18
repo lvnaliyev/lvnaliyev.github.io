@@ -32,9 +32,9 @@ section {
 #myself {
 font-size: 90px;
  color: darkblue;
-  vertical-align: middle;
   text-align: center;
   letter-spacing: 4px;
+  margin-top: 15%;
 }
 #myphoto {
   position: fixed;
