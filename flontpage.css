@@ -35,6 +35,13 @@ font-size: 90px;
   text-align: center;
   letter-spacing: 4px;
   margin-top: 15%;
+  opacity: 1;
+  animation: myself 2.5s ease-in;
+}
+
+@keyframes myself {
+  from{opacity:0.2;}
+  to{opacity:1;}
 }
 #myphoto {
   position: fixed;
@@ -143,7 +150,7 @@ font-size: 90px;
   left: 50%;
   width: 3px;
   height: 50px;
-  z-index: 9999999;
+  z-index: 999;
   background-color: black;
 }
 .dot {
