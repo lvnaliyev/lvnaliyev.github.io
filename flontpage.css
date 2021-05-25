@@ -861,6 +861,14 @@ font-size: 35px;
   opacity: 1;
   animation: myself 2.5s ease-in;
 }
+  #welcome {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    font-size: 45px;
+    color: white;
+    animation: spin 2.3s ease-in-out;
+}
   
   svg {
     height: 60%;
