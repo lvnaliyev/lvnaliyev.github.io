@@ -824,6 +824,17 @@ text-decoration:none;
 
 
 @media screen and (max-width: 1200px) {
+  
+  #myself {
+font-size: 55px;
+ color: darkblue;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-top: 15%;
+  opacity: 1;
+  animation: myself 2.5s ease-in;
+}
+  
 .accordionmenu {
   position: absolute;
   right: 0px;
@@ -841,6 +852,15 @@ text-decoration:none;
 }
 }
 @media screen and (max-width: 479px) {
+    #myself {
+font-size: 35px;
+ color: darkblue;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-top: 25%;
+  opacity: 1;
+  animation: myself 2.5s ease-in;
+}
   
   svg {
     height: 60%;
