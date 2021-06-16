@@ -1,16 +1,27 @@
 <html>
   
- 
+ <body>
   <div class="main-image">
     <img src="gallsrc/img/img-01.jpg" alt="Placeholder" class="custom">
   </div>
 
   <ul class="thumbnails">
-    <li><a href="gallsrc/img/img-01.jpg"><img src="gallsrc/img/img-01-tn.jpg" alt="Thumbnails"></a></li>
-    <li><a href="gallsrc/img/img-02.jpg"><img src="gallsrc/img/img-02-tn.jpg" alt="Thumbnails"></a></li>
-    <li><a href="gallsrc/img/img-03.jpg"><img src="gallsrc/img/img-03-tn.jpg" alt="Thumbnails"></a></li>
+    <li><a href="./img/img-01.jpg"><img src="./img/img-01-tn.jpg" alt="Thumbnails"></a></li>
+    <li><a href="./img/img-02.jpg"><img src="./img/img-02-tn.jpg" alt="Thumbnails"></a></li>
+    <li><a href="./img/img-03.jpg"><img src="./img/img-03-tn.jpg" alt="Thumbnails"></a></li>
   </ul>
   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="jquery.galleryE.js"></script>
+  <script>
+  $(document).ready(function () {
+    $('.thumbnails').galleryE({
+      mainImage: '.custom'
+    });
+  });
+  </script>
+  
+   </body>
   <style>
      * {
       margin: 0;
