@@ -18,7 +18,7 @@
        
      </p>
    </div>
-   <div class='imgright'>
+   
   <div class="main-image">
     <img src="/img/img-01.jpg" alt="Placeholder" class="custom">
   </div>
@@ -28,7 +28,7 @@
     <li><a href="/img/img-02.jpg"><img src="/img/img-02-tn.jpg" alt="Thumbnails"></a></li>
      <li><a href="/img/img-04.jpg"><img src="/img/img-04-tn.jpg" alt="Thumbnails"></a></li>
   </ul>
-  </div>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/jquery.galleryE.js"></script>
   <script>
@@ -54,7 +54,10 @@
       background: #eee;
     }
     
-    .lefttext {float:left}
+    .lefttext {
+      float:left;width:50%;
+    }
+    
     img {
       max-width: 100%;
       padding: 5px;
@@ -79,16 +82,15 @@
     }
     ul {
       list-style: none;
+      margin-top: 2em;
       margin-bottom: 1.5em;
     }
     .main-image {
-     
+     float:right;
       width: 380px;
       margin-bottom: 0.75em;
     }
-    .imgright{
-    float:right;
-    }
+  
     .thumbnails li {
       display: inline;
       margin: 0 10px 0 0;
