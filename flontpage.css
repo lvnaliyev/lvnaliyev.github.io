@@ -559,63 +559,43 @@ text-decoration:none;
 .apBg01 {
   top: -68.5px;
   left: 127.5px;
-  background-image: url('/img/lvn4.jpg');
-  background-size:cover;
-  background-repeat: no-repeat;
+  
   animation: bg1 5s linear, bg 32s infinite linear 5s;
 }
 
 .apBg02 {
   top: 97.5px;
   left: -71.5px;
-  background-image: url('/img/glasses.jpg');
-  background-size:cover;
-  background-repeat: no-repeat;
   animation: bg2 4s linear, bg 34s infinite linear 4s;
 }
 
 .apBg03 {
   top: -16.5px;
   right: -22.5px;
-  background-image: url('/img/lvn4.jpg');
-  background-size:cover;
-  background-repeat: no-repeat;
   animation: bg3 26s linear, bg 30s infinite linear 26s;
 }
 
 .apBg04 {
   top: 175.5px;
   right: 29.89%;
-  background-image: url('/img/lvn4.jpg');
-  background-size:cover;
-  background-repeat: no-repeat;
   animation: bg4 25s linear, bg 44s infinite linear 25s;
 }
 
 .apBg05 {
   top: 278px;
   right: 40.04%;
-  background-image: url('/img/lvn4.jpg');
-  background-size:cover;
-  background-repeat: no-repeat;
   animation: bg5 15s linear, bg 29s infinite linear 15s;
 }
 
 .apBg06 {
   top: 428.5px;
   right: 54px;
-  background-image: url('/img/glasses.jpg');
-  background-size:cover;
-  background-repeat: no-repeat;
   animation: bg6 24s linear, bg 27s infinite linear 24s;
 }
 
 .apBg07 {
   top: 842.5px;
   left: 8.86%;
-  background-image: url('/img/lvn4.jpg');
-  background-size:cover;
-  background-repeat: no-repeat;
   animation: bg7 10s linear, bg 40s infinite linear 10s;
 }
 
