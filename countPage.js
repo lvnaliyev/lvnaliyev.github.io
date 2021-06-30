@@ -36,7 +36,7 @@ $(window).scroll(function () {
       //alert("1です");
       cntpage.innerHTML = "2 / 3";
       subtextbox.innerHTML =
-        "<div class='p10'><div class='p1'><div class='p1box'><div class='p1t'><span class='pi'>P</span><span class='ar'>R</span><span class='ou'>O</span><span class='jay'>J</span><span class='ee'>E</span><span class='si'>C</span><span class='ti'>T</span><span class='es'>S</span></div><p><a href='https://moraine.co.jp/wp0820/'>Moraine Corporation </a> </br> <a href='https://horizon.ac.jp/'>Horizon Japan Int'l School </a> </br> <a href='http://www.hibiscus.edu.my/'> Hibiscus Int'l School </a> </p></div></div><div class='scrolldown'></div><div class='dot'></div></div>";
+        "<div class='p10'><div class='p1'><div class='p1box'><div class='p1t'><span class='pi'>P</span><span class='ar'>R</span><span class='ou'>O</span><span class='jay'>J</span><span class='ee'>E</span><span class='si'>C</span><span class='ti'>T</span><span class='es'>S</span></div><p><a href='https://moraine.co.jp/wp0820/'>Moraine Corporation </a> </br> <a href='https://horizon.ac.jp/'>Horizon Japan Int'l School </a> </br> <a href='http://www.hibiscus.edu.my/'> Hibiscus Int'l School </a> </br> <a href='https://enishi.ac.jp/'> Enishi Int'l School </a> </br> <a href='https://gasanet.org/'> GASA </a></p></div></div><div class='scrolldown'></div><div class='dot'></div></div>";
       element.className = "line20";
     } else if (resultcunt == "2") {
       //alert("1です");
