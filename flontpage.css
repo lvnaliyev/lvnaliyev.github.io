@@ -683,61 +683,61 @@ text-decoration:none;
   top: 38%;
   left: 60%;
   transform: translate(0px);
-  animation: anpi 4s ease-in-out;
+  animation: anpi 2s cubic-bezier(0.42, 0, 0, 1.22);
 }
 
 .p1t .ar {
   position: fixed;
   top: 38%;
   left: 63%;
-  animation: anar ease 5s;
+  animation: anar 2.5s cubic-bezier(0.42, 0, 0, 1.22);
 }
 
 .p1t .ou {
   position: fixed;
   top: 38%;
   left: 66%;
-  animation: anou ease 6s;
+  animation: anou 3s cubic-bezier(0.42, 0, 0, 1.22);
 }
 
 .p1t .jay {
   position: fixed;
   top: 38%;
   left: 70.5%;
-  animation: anjay ease 6.5s;
+  animation: anjay 3.5s cubic-bezier(0.42, 0, 0, 1.22);
 }
 
 .p1t .ee {
   position: fixed;
   top: 38%;
   left: 72%;
-  animation: anee ease 7s;
+  animation: anee 4s cubic-bezier(0.42, 0, 0, 1.22);
 }
 
 .p1t .si {
   position: fixed;
   top: 38%;
   left: 75%;
-  animation: ansi ease 7.5s;
+  animation: ansi 4.5s cubic-bezier(0.42, 0, 0, 1.22);
 }
 
 .p1t .ti {
   position: fixed;
   top: 38%;
   left: 78.4%;
-  animation: anti ease 8s;
+  animation: anti 5s cubic-bezier(0.42, 0, 0, 1.22);
 }
 
 .p1t .es {
   position: fixed;
   top: 38%;
   left: 81%;
-  animation: anes ease 8.5s;
+  animation: anes 5.5s cubic-bezier(0.42, 0, 0, 1.22);
 }
 
 @keyframes anpi {
   from {
-    transform: translate(20px, 20px);
+    transform: translate(0px, -80px);
   }
   to {
     transform: translate(0px);
@@ -746,7 +746,7 @@ text-decoration:none;
 
 @keyframes anar {
   from {
-    transform: translate(-20px, -20px);
+    transform: translate(0px, -81px);
   }
   to {
     transform: translate(0px);
@@ -754,7 +754,7 @@ text-decoration:none;
 }
 @keyframes anou {
   from {
-    transform: translate(40px, 40px);
+    transform: translate(0px, -82px);
   }
   to {
     transform: translate(0px);
@@ -762,7 +762,7 @@ text-decoration:none;
 }
 @keyframes anjay {
   from {
-    transform: translate(60px, -40px);
+    transform: translate(0px, -83px);
   }
   to {
     transform: translate(0px);
@@ -770,7 +770,7 @@ text-decoration:none;
 }
 @keyframes anee {
   from {
-    transform: translate(-50px, 40px);
+    transform: translate(0px, -84px);
   }
   to {
     transform: translate(0px);
@@ -778,7 +778,7 @@ text-decoration:none;
 }
 @keyframes ansi {
   from {
-    transform: translate(80px, 10px);
+    transform: translate(0px, -85px);
   }
   to {
     transform: translate(0px);
@@ -786,7 +786,7 @@ text-decoration:none;
 }
 @keyframes anti {
   from {
-    transform: translate(-50px, 0px);
+    transform: translate(0px, -86px);
   }
   to {
     transform: translate(0px);
@@ -794,7 +794,7 @@ text-decoration:none;
 }
 @keyframes anes {
   from {
-    transform: translate(0px, 50px);
+    transform: translate(0px, -87px);
   }
   to {
     transform: translate(0px);
