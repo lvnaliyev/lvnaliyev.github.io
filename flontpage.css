@@ -287,6 +287,7 @@ font-size: 90px;
 .p1 a {
   color: darkslategrey;
   font-size: 2vw;
+  text-decoration:none;
 }
 
 @keyframes protext {
@@ -801,9 +802,16 @@ text-decoration:none;
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  
+}
 
 
-@media screen and (max-width: 1200px) {
+
+@media screen and (min-width: 1200px) {
   #welcome {
     position: fixed;
     top: 25%;
