@@ -30,8 +30,8 @@ section {
   z-index: 10;
 }
 #myself {
-font-size: 90px;
- color: darkblue;
+  font-size: 90px;
+  color: darkblue;
   text-align: center;
   letter-spacing: 4px;
   margin-top: 15%;
@@ -40,17 +40,21 @@ font-size: 90px;
 }
 
 @keyframes myself {
-  from{opacity:0.2;}
-  to{opacity:1;}
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
 }
 #myphoto {
   position: fixed;
   z-index: 8;
   height: 100%;
   width: 100%;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: top;
-  background-size:cover;
+  background-size: cover;
   background-image: url(/img/lvn4.jpg);
 }
 
@@ -287,7 +291,7 @@ font-size: 90px;
 .p1 a {
   color: darkslategrey;
   font-size: 2vw;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 @keyframes protext {
@@ -321,19 +325,18 @@ font-size: 90px;
   animation: p10back 1.8s ease-out;
 }
 .skills {
-margin-top: 30px;
-  
+  margin-top: 30px;
 }
 
 .skills h1 {
   margin-top: 6%;
   margin-left: 10%;
-font-size: 26px;
+  font-size: 26px;
   color: darkblue;
 }
 
 .skills h2 {
-margin-top:1%;
+  margin-top: 1%;
   margin-bottom: 1%;
   margin-left: 5%;
   font-size: 22px;
@@ -342,8 +345,8 @@ margin-top:1%;
 
 .skills ul li {
   padding-left: 10%;
-  list-style:none;
-text-decoration:none;
+  list-style: none;
+  text-decoration: none;
   color: darkgrey;
 }
 
@@ -355,11 +358,10 @@ text-decoration:none;
   color: #34495e;
   padding: 2px 10px;
   border-radius: 3px;
-  overflow:hidden;
-  text-align:left;
-  background-color:white;
-  filter:drop-shadow(0px 1px 3px rgba(82,65,65,.7));
-  
+  overflow: hidden;
+  text-align: left;
+  background-color: white;
+  filter: drop-shadow(0px 1px 3px rgba(82, 65, 65, 0.7));
 }
 
 #second:hover::after {
@@ -370,11 +372,10 @@ text-decoration:none;
   color: #34495e;
   padding: 2px 10px;
   border-radius: 3px;
-  overflow:hidden;
-  text-align:left;
-  background-color:white;
-  filter:drop-shadow(0px 1px 3px rgba(82,65,65,.7));
-  
+  overflow: hidden;
+  text-align: left;
+  background-color: white;
+  filter: drop-shadow(0px 1px 3px rgba(82, 65, 65, 0.7));
 }
 
 #third:hover::after {
@@ -383,13 +384,12 @@ text-decoration:none;
   width: 200px;
   height: fit-content;
   color: #34495e;
- padding: 2px 10px;
+  padding: 2px 10px;
   border-radius: 3px;
-  overflow:hidden;
-  text-align:left;
-  background-color:white;
-  filter:drop-shadow(0px 1px 3px rgba(82,65,65,.7));
-  
+  overflow: hidden;
+  text-align: left;
+  background-color: white;
+  filter: drop-shadow(0px 1px 3px rgba(82, 65, 65, 0.7));
 }
 
 #fourth:hover::after {
@@ -398,13 +398,12 @@ text-decoration:none;
   width: 200px;
   height: fit-content;
   color: #34495e;
- padding: 2px 10px;
+  padding: 2px 10px;
   border-radius: 3px;
-  overflow:hidden;
-  text-align:left;
-  background-color:white;
-  filter:drop-shadow(0px 1px 3px rgba(82,65,65,.7));
-  
+  overflow: hidden;
+  text-align: left;
+  background-color: white;
+  filter: drop-shadow(0px 1px 3px rgba(82, 65, 65, 0.7));
 }
 
 #five:hover::after {
@@ -413,13 +412,12 @@ text-decoration:none;
   width: 200px;
   height: fit-content;
   color: #34495e;
- padding: 2px 10px;
+  padding: 2px 10px;
   border-radius: 3px;
-  overflow:hidden;
-  text-align:left;
-  background-color:white;
-  filter:drop-shadow(0px 1px 3px rgba(82,65,65,.7));
-  
+  overflow: hidden;
+  text-align: left;
+  background-color: white;
+  filter: drop-shadow(0px 1px 3px rgba(82, 65, 65, 0.7));
 }
 #six:hover::after {
   content: attr(data-tooltip-six);
@@ -429,18 +427,19 @@ text-decoration:none;
   color: #34495e;
   padding: 2px 10px;
   border-radius: 3px;
-  overflow:hidden;
-  text-align:left;
-  background-color:white;
-  filter:drop-shadow(0px 1px 3px rgba(82,65,65,.7));
-  
+  overflow: hidden;
+  text-align: left;
+  background-color: white;
+  filter: drop-shadow(0px 1px 3px rgba(82, 65, 65, 0.7));
 }
 
-
-
 @keyframes p10back {
-  0% {left:50%;}
-  100%{left:0%;}
+  0% {
+    left: 50%;
+  }
+  100% {
+    left: 0%;
+  }
 }
 
 @keyframes p10 {
@@ -560,7 +559,7 @@ text-decoration:none;
 .apBg01 {
   top: -68.5px;
   left: 127.5px;
-  
+
   animation: bg1 5s linear, bg 32s infinite linear 5s;
 }
 
@@ -681,7 +680,7 @@ text-decoration:none;
 
 .p1t .pi {
   position: fixed;
-  top: 38%;
+  top: 60%;
   left: 60%;
   transform: translate(0px);
   animation: anpi 2s cubic-bezier(0.42, 0, 0, 1.22);
@@ -803,13 +802,9 @@ text-decoration:none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  
 }
-
-
 
 @media screen and (min-width: 1200px) {
   #welcome {
@@ -819,43 +814,43 @@ text-decoration:none;
     font-size: 55px;
     color: white;
     animation: spin 2.3s ease-in-out;
-}
+  }
   #myself {
-font-size: 55px;
- color: darkblue;
-  text-align: center;
-  letter-spacing: 4px;
-  margin-top: 15%;
-  opacity: 1;
-  animation: myself 2.5s ease-in;
-}
-  
-.accordionmenu {
-  position: absolute;
-  right: 0px;
-  height: 100vh;
-  top: 0;
-  background-color: #a43e3e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  transform: translateX(100%);
-  transition: transform 2s ease-in;
-  z-index: 999;
-  padding-top: 3%;
-}
+    font-size: 55px;
+    color: darkblue;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-top: 15%;
+    opacity: 1;
+    animation: myself 2.5s ease-in;
+  }
+
+  .accordionmenu {
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 0;
+    background-color: #a43e3e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 2s ease-in;
+    z-index: 999;
+    padding-top: 3%;
+  }
 }
 @media screen and (max-width: 479px) {
-    #myself {
-font-size: 35px;
- color: darkblue;
-  text-align: center;
-  letter-spacing: 4px;
-  margin-top: 25%;
-  opacity: 1;
-  animation: myself 2.5s ease-in;
-}
+  #myself {
+    font-size: 35px;
+    color: darkblue;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-top: 25%;
+    opacity: 1;
+    animation: myself 2.5s ease-in;
+  }
   #welcome {
     position: fixed;
     top: 25%;
@@ -863,8 +858,8 @@ font-size: 35px;
     font-size: 45px;
     color: white;
     animation: spin 2.3s ease-in-out;
-}
-  
+  }
+
   svg {
     height: 60%;
   }
