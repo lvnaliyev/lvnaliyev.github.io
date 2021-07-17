@@ -680,7 +680,7 @@ section {
 
 .p1t .pi {
   position: fixed;
-  top: 60%;
+  top: 38%;
   left: 60%;
   transform: translate(0px);
   animation: anpi 2s cubic-bezier(0.42, 0, 0, 1.22);
