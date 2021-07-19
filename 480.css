@@ -1,2 +1,11 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  #myself {
+    font-size: 50px;
+    color: darkblue;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-top: 34%;
+    opacity: 1;
+    animation: myself 2.5s ease-in;
+  }
 }
