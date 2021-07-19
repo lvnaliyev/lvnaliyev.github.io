@@ -6,7 +6,7 @@
     letter-spacing: 4px;
     margin-top: 25%;
     opacity: 1;
-    animation: myself 2.5s ease-in;
+    width: 8em;
   }
   #welcome {
     position: fixed;
@@ -168,7 +168,7 @@
       width: 0;
     }
     to {
-      width: 18em;
+      width: 8em;
     }
   }
 

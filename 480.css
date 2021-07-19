@@ -6,7 +6,7 @@
     letter-spacing: 4px;
     margin-top: 34%;
     opacity: 1;
-    animation: myself 2.5s ease-in;
+    width: 12em;
   }
   .rine-1 {
     border-right: 1px solid rgba(25, 25, 25, 0);
@@ -25,7 +25,7 @@
       width: 0;
     }
     to {
-      width: 18em;
+      width: 12em;
     }
   }
 
