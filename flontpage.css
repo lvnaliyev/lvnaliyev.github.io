@@ -36,17 +36,8 @@ section {
   letter-spacing: 4px;
   margin-top: 15%;
   opacity: 1;
-  animation: myself 2.5s ease-in;
 }
 
-@keyframes myself {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
-}
 #myphoto {
   position: fixed;
   z-index: 8;
@@ -462,8 +453,6 @@ section {
 }
 
 .rine-1 {
-  width: 18em;
-  line-height: 1em;
   border-right: 1px solid rgba(25, 25, 25, 0);
   white-space: nowrap;
   overflow: hidden;
