@@ -30,7 +30,7 @@ section {
   z-index: 10;
 }
 #myself {
-  font-size: 90px;
+  font-size: 72px;
   color: darkblue;
   text-align: center;
   letter-spacing: 4px;
@@ -453,7 +453,7 @@ section {
 }
 
 .rine-1 {
-  border-right: 1px solid rgba(25, 25, 25, 0);
+  border-right: 1px solid rgba(25, 25, 25, 0.904);
   white-space: nowrap;
   overflow: hidden;
   color: blue;

@@ -34,7 +34,7 @@
   }
 
   .rine-1 {
-    border-right: 1px solid rgba(25, 25, 25, 0);
+    border-right: 1px solid rgba(25, 25, 25, 0.904);
     white-space: nowrap;
     overflow: hidden;
     color: blue;

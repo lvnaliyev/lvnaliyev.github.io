@@ -9,7 +9,7 @@
     width: 12em;
   }
   .rine-1 {
-    border-right: 1px solid rgba(25, 25, 25, 0);
+    border-right: 1px solid rgba(25, 25, 25, 0.904);
     white-space: nowrap;
     overflow: hidden;
     color: blue;
@@ -34,7 +34,7 @@
       border-right-color: transparent;
     }
     to {
-      border-right-color: rgb(70, 69, 69);
+      border-right-color: rgb(37, 37, 37);
     }
   }
 }
