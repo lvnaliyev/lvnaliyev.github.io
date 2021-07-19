@@ -2,30 +2,43 @@
 <html>
   <html>
     <head>
-      
-      <meta http-equiv='cache-control' content='no-cache'> 
-      <meta http-equiv='expires' content='0'> 
-      <meta http-equiv='pragma' content='no-cache'>
+      <meta http-equiv="cache-control" content="no-cache" />
+      <meta http-equiv="expires" content="0" />
+      <meta http-equiv="pragma" content="no-cache" />
       <link href="/flontpage.css" rel="stylesheet" type="text/css" />
+      <link
+        rel="stylesheet"
+        media="screen and (min-width: 300px) and (max-width: 480px)"
+        href="/300.css"
+      />
+      <link
+        rel="stylesheet"
+        media="screen and (min-width: 481px) and (max-width: 768px)"
+        href="/480.css"
+      />
+      <link
+        rel="stylesheet"
+        media="screen and (min-width: 769px) and (max-width: 1200px)"
+        href="/768.css"
+      />
       <script type="text/javascript" src="/jquery-1.10.2.js"></script>
       <script type="text/javascript" src="/jquery.horizonScroll.js"></script>
       <script type="text/javascript" src="/jquery.touchSwipe.js"></script>
     </head>
-   
-<div id="preloader">
-  <div id="welcome"> <img src='/img/logobig.png'> </div>
- 
-</div>
-     <script>
+
+    <div id="preloader">
+      <div id="welcome"><img src="/img/logobig.png" /></div>
+    </div>
+    <script>
       var preloader = document.getElementById("preloader");
-window.addEventListener('load', function(){
-  preloader.classList.add('preloader-done')
-})
+      window.addEventListener("load", function () {
+        preloader.classList.add("preloader-done");
+      });
     </script>
-    
-    <style> 
+
+    <style>
       #welcome {
-      position:fixed;
+        position: fixed;
         top: 25%;
         left: 40%;
         opacity: 1;
@@ -33,115 +46,122 @@ window.addEventListener('load', function(){
         color: white;
         animation: spin 5s ease-in-out;
       }
-      
-      
 
-@keyframes spin {
-    0%{
-        opacity: 0;
-    }
-  50%{
-        opacity: 0.3;
-    }
-  100% {
-        opacity: 1;
-  }
-}
-
-#preloader{
-  height:100%;
-  width:100%;
-  background:rgba(0, 0, 0, 1);
-  z-index: 9999;
-  transition: opacity 6s ease-out;
-  position:fixed;
-  left:0;
-  top:0;
- }
-      
-      .preloader-done {
-      opacity:0;
-        pointer-events:none;
+      @keyframes spin {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 1;
+        }
       }
-      
+
+      #preloader {
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 1);
+        z-index: 9999;
+        transition: opacity 6s ease-out;
+        position: fixed;
+        left: 0;
+        top: 0;
+      }
+
+      .preloader-done {
+        opacity: 0;
+        pointer-events: none;
+      }
     </style>
-    
+
     <div id="warpper">
       <div id="myphoto"></div>
-      
-<div id="burger" class="overlay">
-  <a href="javascript:void(0)" class="closeBur" onclick="closeBurger()">&#9876;</a>
-  <div class="navLinks">
-    <a href="/about">About me</a>
-    <a href="/miniature">Miniature</a>
-    <a href="/contact">Contact</a>
-  </div>
-</div>
-<span id="burgIcon" style="font-size:30px;cursor:pointer" onclick="openBurger()">&#9868;</span>
-<style>
-  #burgIcon{
-    position: fixed;
-    top: 10%;
-    right: 10%;
-  z-index: 99999;
-  }
-  .overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  left: 0;
-  background-color: rgba(0.01,0.01,0.01, 0.9);
-  overflow-x: hidden;
-  transition: 0.6s ease-in-out;
-}
 
-.navLinks {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
+      <div id="burger" class="overlay">
+        <a href="javascript:void(0)" class="closeBur" onclick="closeBurger()"
+          >&#9876;</a
+        >
+        <div class="navLinks">
+          <a href="/about">About me</a>
+          <a href="/miniature">Miniature</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+      <span
+        id="burgIcon"
+        style="font-size: 30px; cursor: pointer"
+        onclick="openBurger()"
+        >&#9868;</span
+      >
+      <style>
+        #burgIcon {
+          position: fixed;
+          top: 10%;
+          right: 10%;
+          z-index: 99999;
+        }
+        .overlay {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 99;
+          top: 0;
+          left: 0;
+          background-color: rgba(0.01, 0.01, 0.01, 0.9);
+          overflow-x: hidden;
+          transition: 0.6s ease-in-out;
+        }
 
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 28px;
-  color: grey;
-  display: block;
-  transition: 0.3s;
-}
+        .navLinks {
+          position: relative;
+          top: 25%;
+          width: 100%;
+          text-align: center;
+          margin-top: 30px;
+        }
 
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
+        .overlay a {
+          padding: 8px;
+          text-decoration: none;
+          font-size: 28px;
+          color: grey;
+          display: block;
+          transition: 0.3s;
+        }
 
-.overlay .closeBur {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
+        .overlay a:hover,
+        .overlay a:focus {
+          color: #f1f1f1;
+        }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closeBur {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}
+        .overlay .closeBur {
+          position: absolute;
+          top: 20px;
+          right: 45px;
+          font-size: 60px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .overlay a {
+            font-size: 20px;
+          }
+          .overlay .closeBur {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+          }
+        }
       </style>
-<script>
-function openBurger() {
-  document.getElementById("burger").style.width = "100%";
-}
-function closeBurger() {
-  document.getElementById("burger").style.width = "0%";
-}
-</script>
+      <script>
+        function openBurger() {
+          document.getElementById("burger").style.width = "100%";
+        }
+        function closeBurger() {
+          document.getElementById("burger").style.width = "0%";
+        }
+      </script>
       <section data-role="section" id="section-section1"></section>
       <section data-role="section" id="section-section2"></section>
       <section data-role="section" id="section-section3"></section>
