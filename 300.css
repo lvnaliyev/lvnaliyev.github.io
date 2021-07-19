@@ -1,12 +1,12 @@
 @media screen and (max-width: 480px) {
   #myself {
-    font-size: 35px;
+    font-size: 33px;
     color: darkblue;
     text-align: center;
     letter-spacing: 4px;
     margin-top: 25%;
     opacity: 1;
-    width: 8em;
+    width: 10em;
   }
   #welcome {
     position: fixed;
@@ -160,7 +160,7 @@
   /* Animation */
   .anim-typewriter {
     animation: typewriter 5s steps(44) 1s 1 normal both,
-      blinkTextCursor 2s steps(40) normal;
+      blinkTextCursor 2s steps(40) infinite;
   }
 
   @keyframes typewriter {
@@ -168,7 +168,7 @@
       width: 0;
     }
     to {
-      width: 8em;
+      width: 10em;
     }
   }
 

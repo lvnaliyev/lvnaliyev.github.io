@@ -14,7 +14,7 @@
     letter-spacing: 4px;
     margin-top: 15%;
     opacity: 1;
-    width: 14em;
+    width: 13em;
   }
 
   .accordionmenu {
@@ -42,7 +42,7 @@
   /* Animation */
   .anim-typewriter {
     animation: typewriter 5s steps(44) 1s 1 normal both,
-      blinkTextCursor 2s steps(40) normal;
+      blinkTextCursor 2s steps(40) infinite;
   }
 
   @keyframes typewriter {
@@ -50,7 +50,7 @@
       width: 0;
     }
     to {
-      width: 14em;
+      width: 13em;
     }
   }
 

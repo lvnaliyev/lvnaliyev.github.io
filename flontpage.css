@@ -461,7 +461,7 @@ section {
 /* Animation */
 .anim-typewriter {
   animation: typewriter 5s steps(44) 1s 1 normal both,
-    blinkTextCursor 2s steps(40) normal;
+    blinkTextCursor 2s steps(40) infinite;
 }
 
 @keyframes typewriter {
@@ -469,7 +469,7 @@ section {
     width: 0;
   }
   to {
-    width: 18em;
+    width: 16em;
   }
 }
 
