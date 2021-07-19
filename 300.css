@@ -16,11 +16,6 @@
     color: white;
     animation: spin 2.3s ease-in-out;
   }
-
-  svg {
-    height: 60%;
-  }
-
   .p1t span {
     font-size: 20px;
   }
@@ -154,5 +149,35 @@
     bottom: 1;
     height: 1px;
     z-index: 9999;
+  }
+
+  .rine-1 {
+    border-right: 1px solid rgba(25, 25, 25, 0);
+    white-space: nowrap;
+    overflow: hidden;
+    color: blue;
+  }
+  /* Animation */
+  .anim-typewriter {
+    animation: typewriter 5s steps(44) 1s 1 normal both,
+      blinkTextCursor 2s steps(40) normal;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 18em;
+    }
+  }
+
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: transparent;
+    }
+    to {
+      border-right-color: rgb(70, 69, 69);
+    }
   }
 }
