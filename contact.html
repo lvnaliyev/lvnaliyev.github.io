@@ -1,218 +1,232 @@
 <html>
-<head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" >
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,400" >
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway:100,200,400"
+    />
   </head>
   <div class="homelink">
-     <a href="lvnaliyev.github.io"> <img src="/img/logonoline.png"> </a>
-   </div>
+    <a href="lvnaliyev.github.io">
+      <!-- <img src="/img/logonoline.png">  -->
+      <span> &#xf053; </span>
+    </a>
+  </div>
   <div id="burger" class="overlay">
-  <a href="javascript:void(0)" class="closeBur" onclick="closeBurger()">&#9876;</a>
-  <div class="navLinks">
-    <a href="/about">About me</a>
-    <a href="/miniature">Miniature</a>
-    <a href="/contact">Contact</a>
+    <a href="javascript:void(0)" class="closeBur" onclick="closeBurger()"
+      >&#9876;</a
+    >
+    <div class="navLinks">
+      <a href="/about">About me</a>
+      <a href="/miniature">Miniature</a>
+      <a href="/contact">Contact</a>
+    </div>
   </div>
-</div>
-<span id="burgIcon" style="font-size:30px;cursor:pointer" onclick="openBurger()">&#9868;</span>
-<style>
-  #burgIcon{
-    position: fixed;
-    top: 10%;
-    right: 10%;
-  z-index: 99999;
-  }
-  .overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  left: 0;
-  background-color: rgba(0.01,0.01,0.01, 0.9);
-  overflow-x: hidden;
-  transition: 0.6s ease-in-out;
-}
+  <span
+    id="burgIcon"
+    style="font-size: 30px; cursor: pointer"
+    onclick="openBurger()"
+    >&#9868;</span
+  >
+  <style>
+    #burgIcon {
+      position: fixed;
+      top: 10%;
+      right: 10%;
+      z-index: 99999;
+    }
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 99;
+      top: 0;
+      left: 0;
+      background-color: rgba(0.01, 0.01, 0.01, 0.9);
+      overflow-x: hidden;
+      transition: 0.6s ease-in-out;
+    }
 
-.navLinks {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
+    .navLinks {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
 
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 28px;
-  color: grey;
-  display: block;
-  transition: 0.3s;
-}
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 28px;
+      color: grey;
+      display: block;
+      transition: 0.3s;
+    }
 
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
+    .overlay a:hover,
+    .overlay a:focus {
+      color: #f1f1f1;
+    }
 
-.overlay .closeBur {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
+    .overlay .closeBur {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closeBur {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}
-      </style>
-<script>
-function openBurger() {
-  document.getElementById("burger").style.width = "100%";
-  document.getElementById("burgIcon").style.opacity = "0";
-}
-function closeBurger() {
-  document.getElementById("burger").style.width = "0%";
-  document.getElementById("burgIcon").style.opacity = "1";
-  
-}
+    @media screen and (max-height: 450px) {
+      .overlay a {
+        font-size: 20px;
+      }
+      .overlay .closeBur {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+  </style>
+  <script>
+    function openBurger() {
+      document.getElementById("burger").style.width = "100%";
+      document.getElementById("burgIcon").style.opacity = "0";
+    }
+    function closeBurger() {
+      document.getElementById("burger").style.width = "0%";
+      document.getElementById("burgIcon").style.opacity = "1";
+    }
   </script>
-  
-  
-<h1>Elvin Aliyev</h1>
-<i>Front end Developer & Designer</i>
-<a href="https://www.facebook.com/lvnaliyev/" class="fa fa-facebook"></a>
-<a href="https://github.com/lvnaliyev/" class="fa fa-github"></a>
-<a href="https://www.instagram.com/aelvin20/" class="fa fa-instagram"></a>
-  <div class="phail">
-  lvnaliyev@gmail.com 
-  </div>
-     <div class="phail">
-  +817083344188 
-  </div>
-  <style> 
-    html,
-body {
-  height: 100%;
-  margin:0
-}
 
-body {
-  text-align: right;
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-size:15px;
-  background: #999 url('/img/glasses.jpg') center no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  padding-right: 50px
-}
+  <h1>Elvin Aliyev</h1>
+  <i>Front end Developer & Designer</i>
+  <a href="https://www.facebook.com/lvnaliyev/" class="fa fa-facebook"></a>
+  <a href="https://github.com/lvnaliyev/" class="fa fa-github"></a>
+  <a href="https://www.instagram.com/aelvin20/" class="fa fa-instagram"></a>
+  <div class="phail">lvnaliyev@gmail.com</div>
+  <div class="phail">+817083344188</div>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      text-align: right;
+      color: #fff;
+      font-family: "Raleway", sans-serif;
+      font-size: 15px;
+      background: #999 url("/img/glasses.jpg") center no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      padding-right: 50px;
+    }
 
     .homelink {
-    text-align: left;
+      text-align: left;
       margin-left: 5%;
-      margin-top:1%;
+      margin-top: 1%;
     }
-body:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(40, 40, 45, 0.8);
-  width: 100%;
-  height: 100%;
-  z-index: -1
-}
-    
+    body:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(40, 40, 45, 0.8);
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
     .phail {
-    padding-top: 20px;
+      padding-top: 20px;
     }
-a{
-  color:inherit
-}
-h1 {
-  width: 100%;
-  margin: 40vh 0 3vh 0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  font-size: 3em;
-  transition:all 0.4s
-}
-h1:hover{
-  color:#08c
-}
-i {
-  display: block;
-  width: 100%;
-  margin-bottom: 4vh;
-  font-size:1em
-}
+    a {
+      color: inherit;
+    }
+    h1 {
+      width: 100%;
+      margin: 40vh 0 3vh 0;
+      font-family: "Raleway", sans-serif;
+      font-weight: 100;
+      font-size: 3em;
+      transition: all 0.4s;
+    }
+    h1:hover {
+      color: #08c;
+    }
+    i {
+      display: block;
+      width: 100%;
+      margin-bottom: 4vh;
+      font-size: 1em;
+    }
 
-.fa {
-  display: inline-block;  
-  color: inherit;
-  border:1px solid;
-  text-decoration: none;
-  padding-top: 12px;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  border-radius: 20%;
-  box-sizing: border-box;
-  margin-left: 1em;
-  background: rgba(0, 0, 0, 0);
-  transition: all 0.4s;
-}
+    .fa {
+      display: inline-block;
+      color: inherit;
+      border: 1px solid;
+      text-decoration: none;
+      padding-top: 12px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      border-radius: 20%;
+      box-sizing: border-box;
+      margin-left: 1em;
+      background: rgba(0, 0, 0, 0);
+      transition: all 0.4s;
+    }
 
-.fa:hover {
-  color: #05a;  
-  border-color:inherit;
-  background: rgba(0, 0, 0, 0.5);
-}
+    .fa:hover {
+      color: #05a;
+      border-color: inherit;
+      background: rgba(0, 0, 0, 0.5);
+    }
 
-.fa:nth-of-type(2):hover {
-  color: #09c;
-  border-color:inherit
-}
+    .fa:nth-of-type(2):hover {
+      color: #09c;
+      border-color: inherit;
+    }
 
-.fa:nth-of-type(3):hover {
-  color: #d19;
-  border-color:inherit
-  
-}
+    .fa:nth-of-type(3):hover {
+      color: #d19;
+      border-color: inherit;
+    }
 
-.fa:nth-of-type(4):hover {
-  color: #e90;
-  border-color:inherit
-}
+    .fa:nth-of-type(4):hover {
+      color: #e90;
+      border-color: inherit;
+    }
 
-.fa:nth-of-type(5):hover {
-  color: #0c6;
-  border-color:inherit
-}
+    .fa:nth-of-type(5):hover {
+      color: #0c6;
+      border-color: inherit;
+    }
 
-footer{
-  font-size: 0.7em;  
-  text-align: center;  
-  color: #666;  background:rgba(0,0,0,0.4); 
-  width: 100vw;  
-  position: absolute; 
-  bottom: 0px;  
-  padding:0.8em 0;
-}
-.white{
-  color:#333
-}
-.white:before{
-  background: rgba(240, 240, 240, 0.8);
-}
-.white footer, .white .fa:hover{
-  background-color:rgba(250, 250, 2520, 0.4);
-}
-    </style>
-  </html>
+    footer {
+      font-size: 0.7em;
+      text-align: center;
+      color: #666;
+      background: rgba(0, 0, 0, 0.4);
+      width: 100vw;
+      position: absolute;
+      bottom: 0px;
+      padding: 0.8em 0;
+    }
+    .white {
+      color: #333;
+    }
+    .white:before {
+      background: rgba(240, 240, 240, 0.8);
+    }
+    .white footer,
+    .white .fa:hover {
+      background-color: rgba(250, 250, 2520, 0.4);
+    }
+  </style>
+</html>
