@@ -14,7 +14,7 @@
     letter-spacing: 4px;
     margin-top: 15%;
     opacity: 1;
-    width: 13em;
+    width: 11em;
   }
 
   .accordionmenu {
@@ -50,7 +50,7 @@
       width: 0;
     }
     to {
-      width: 13em;
+      width: 11em;
     }
   }
 
