@@ -21,11 +21,6 @@
   </div>
   <div id="burger" class="overlay">
     <a href="javascript:void(0)" class="closeBur" onclick="closeBurger()"> </a>
-    <div class="burgerlines">
-      <div class="line line1"></div>
-      <div class="line line2"></div>
-      <div class="line line3"></div>
-    </div>
 
     <div class="navLinks">
       <a href="/about">About me</a>
@@ -37,8 +32,11 @@
     id="burgIcon"
     style="font-size: 30px; cursor: pointer"
     onclick="openBurger()"
-    >&#9868;</span
-  >
+    ><div class="burgerlines">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div></div
+  ></span>
   <style>
     .burgerlines {
       position: fixed;
