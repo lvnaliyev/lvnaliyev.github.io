@@ -38,15 +38,15 @@
     <div class="lines line3"></div>
   </div>
   <style>
-    .toggle.line1 {
-      rotate: 45deg;
+    .toggle1 {
+      transform: rotate(-45deg);
     }
-    .toggle.line2 {
+    .toggle2 {
       opacity: 0;
     }
 
-    .toggle.line3 {
-      rotate: -45deg;
+    .toggle3 {
+      transform: rotate(-45deg);
     }
 
     #burgIcon {
@@ -58,8 +58,9 @@
 
     .lines {
       width: 32px;
-      height: 2px;
-      color: red;
+      height: 1px;
+      background: white;
+      margin-bottom: 9px;
     }
     .overlay {
       height: 100%;
@@ -114,15 +115,21 @@
     }
   </style>
   <script>
-    var toggle = getElementById("burgIcon");
+    var toggle1 = getElementByClassName("line1");
+    var toggle2 = getElementByClassName("line2");
+    var toggle3 = getElementByClassName("line3");
 
     function openBurger() {
-      toggle.classList.add("toggle");
+      toggle1.classList.add("toggle1");
+      toggle2.classList.add("toggle2");
+      toggle3.classList.add("toggle3");
       document.getElementById("burger").style.width = "100%";
       document.getElementById("burgIcon").style.opacity = "0";
     }
     function closeBurger() {
-      toggle.classList.remove("toggle");
+      toggle1.classList.remove("toggle1");
+      toggle2.classList.remove("toggle2");
+      toggle3.classList.remove("toggle3");
       document.getElementById("burger").style.width = "0%";
       document.getElementById("burgIcon").style.opacity = "1";
     }
