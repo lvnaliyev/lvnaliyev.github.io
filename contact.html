@@ -28,27 +28,16 @@
       <a href="/contact">Contact</a>
     </div>
   </div>
-  <span
+  <div
     id="burgIcon"
     style="font-size: 30px; cursor: pointer"
     onclick="openBurger()"
-    ><div class="burgerlines">
-      <div class="line line1"></div>
-      <div class="line line2"></div>
-      <div class="line line3"></div></div
-  ></span>
+  >
+    <div class="lines line1"></div>
+    <div class="lines line2"></div>
+    <div class="lines line3"></div>
+  </div>
   <style>
-    .burgerlines {
-      position: fixed;
-      top: 15%;
-      right: 10%;
-      z-index: 99999;
-    }
-    .burgerlines line {
-      color: rgba(40, 40, 45, 0.8);
-      width: 1px;
-    }
-
     .toggle line1 {
       rotate: 45deg;
     }
@@ -65,6 +54,11 @@
       top: 10%;
       right: 10%;
       z-index: 99999;
+    }
+
+    #burgerIcon lines {
+      width: 2px;
+      color: red;
     }
     .overlay {
       height: 100%;
