@@ -9,90 +9,206 @@
     <div class="homelink">
       <a href="lvnaliyev.github.io"> <img src="/img/logonoline.png" /> </a>
     </div>
-
-    <div id="burger" class="overlay">
-      <a href="javascript:void(0)" class="closeBur" onclick="closeBurger()"
-        >&#9876;</a
-      >
-      <div class="navLinks">
-        <a href="/about">About me</a>
-        <a href="/miniature">Miniature</a>
-        <a href="/contact">Contact</a>
+    <div class="outer-menu">
+      <input class="checkbox-toggle" type="checkbox" />
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="/about">About me</a></li>
+              <li><a href="/miniature">Miniature</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <span
-      id="burgIcon"
-      style="font-size: 30px; cursor: pointer"
-      onclick="openBurger()"
-      >&#9868;</span
-    >
     <style>
-      #burgIcon {
-        position: fixed;
-        top: 10%;
-        right: 10%;
-        z-index: 99999;
+      .flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      .overlay {
-        height: 100%;
-        width: 0;
+      a,
+      a:visited,
+      a:hover,
+      a:active {
+        color: inherit;
+        text-decoration: none;
+      }
+      .outer-menu {
         position: fixed;
-        z-index: 99;
+        top: 10vh;
+        left: 0;
+        z-index: 1;
+      }
+      .outer-menu .checkbox-toggle {
+        position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(0.01, 0.01, 0.01, 0.9);
-        overflow-x: hidden;
-        transition: 0.6s ease-in-out;
+        z-index: 2;
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        opacity: 0;
       }
-
-      .navLinks {
-        position: relative;
-        top: 25%;
-        width: 100%;
-        text-align: center;
-        margin-top: 30px;
+      .outer-menu .checkbox-toggle:checked + .hamburger > div {
+        transform: rotate(135deg);
       }
-
-      .overlay a {
-        padding: 8px;
-        text-decoration: none;
-        font-size: 28px;
-        color: grey;
-        display: block;
-        transition: 0.3s;
+      .outer-menu .checkbox-toggle:checked + .hamburger > div:before,
+      .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+        top: 0;
+        transform: rotate(90deg);
       }
-
-      .overlay a:hover,
-      .overlay a:focus {
-        color: #f1f1f1;
+      .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+        opacity: 0;
       }
-
-      .overlay .closeBur {
+      .outer-menu .checkbox-toggle:checked ~ .menu {
+        pointer-events: auto;
+        visibility: visible;
+      }
+      .outer-menu .checkbox-toggle:checked ~ .menu > div {
+        transform: scale(1);
+        transition-duration: 0.75s;
+      }
+      .outer-menu .checkbox-toggle:checked ~ .menu > div > div {
+        opacity: 1;
+        transition: opacity 0.4s ease 0.4s;
+      }
+      .outer-menu .checkbox-toggle:hover + .hamburger {
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
+        transform: rotate(225deg);
+      }
+      .outer-menu .hamburger {
         position: absolute;
-        top: 20px;
-        right: 45px;
-        font-size: 60px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        padding: 0.5em 1em;
+        /* background: rgb(117 117 117 / 95%); */
+        border-radius: 0 0.12em 0.12em 0;
+        cursor: pointer;
+        transition: box-shadow 0.4s ease;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-
-      @media screen and (max-height: 450px) {
-        .overlay a {
-          font-size: 20px;
-        }
-        .overlay .closeBur {
-          font-size: 40px;
-          top: 15px;
-          right: 35px;
-        }
+      .outer-menu .hamburger > div {
+        position: relative;
+        flex: none;
+        width: 100%;
+        height: 2px;
+        background: #fefefe;
+        transition: all 0.4s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .outer-menu .hamburger > div:before,
+      .outer-menu .hamburger > div:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+        transition: all 0.4s ease;
+      }
+      .outer-menu .hamburger > div:after {
+        top: 10px;
+      }
+      .outer-menu .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        visibility: hidden;
+        overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        outline: 1px solid transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .outer-menu .menu > div {
+        width: 200vw;
+        height: 200vw;
+        color: white;
+        background: rgb(117 117 117 / 95%);
+        border-radius: 50%;
+        transition: all 0.4s ease;
+        flex: none;
+        transform: scale(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .outer-menu .menu > div > div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        overflow-y: auto;
+        flex: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .outer-menu .menu > div > div > ul {
+        list-style: none;
+        padding: 0 1em;
+        margin: 0;
+        display: block;
+        max-height: 100vh;
+      }
+      .outer-menu .menu > div > div > ul > li {
+        padding: 0;
+        margin: 1em;
+        font-size: 24px;
+        display: block;
+      }
+      .outer-menu .menu > div > div > ul > li > a {
+        position: relative;
+        display: inline;
+        cursor: pointer;
+        transition: color 0.4s ease;
+      }
+      .outer-menu .menu > div > div > ul > li > a:hover {
+        color: #e5e5e5;
+      }
+      .outer-menu .menu > div > div > ul > li > a:hover:after {
+        width: 100%;
+      }
+      .outer-menu .menu > div > div > ul > li > a:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: -0.15em;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #e5e5e5;
+        transition: width 0.4s ease;
       }
     </style>
-    <script>
-      function openBurger() {
-        document.getElementById("burger").style.width = "100%";
-      }
-      function closeBurger() {
-        document.getElementById("burger").style.width = "0%";
-      }
-    </script>
 
     <div class="lefttext">
       <h2>about me</h2>
