@@ -116,21 +116,17 @@
     }
   </style>
   <script>
-    let toggle1 = document.querySelector(".line1");
-    let toggle2 = document.querySelector(".line2");
-    let toggle3 = document.querySelector(".line3");
-
     function openBurger() {
-      toggle1.classList.add("toggle1");
-      toggle2.classList.add("toggle2");
-      toggle3.classList.add("toggle3");
+      document.querySelector(".line1").classList.add("toggle1");
+      document.querySelector(".line2").classList.add("toggle2");
+      document.querySelector(".line3").classList.add("toggle3");
       document.getElementById("burger").style.width = "100%";
       document.getElementById("burgIcon").style.opacity = "0";
     }
     function closeBurger() {
-      toggle1.classList.remove("toggle1");
-      toggle2.classList.remove("toggle2");
-      toggle3.classList.remove("toggle3");
+      document.querySelector(".line1").classList.remove("toggle1");
+      document.querySelector(".line2").classList.remove("toggle2");
+      document.querySelector(".line3").classList.remove("toggle3");
       document.getElementById("burger").style.width = "0%";
       document.getElementById("burgIcon").style.opacity = "1";
     }
