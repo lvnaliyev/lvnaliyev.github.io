@@ -56,7 +56,7 @@
       z-index: 99999;
     }
 
-    #burgIcon.lines {
+    .lines {
       width: 32px;
       height: 2px;
       color: red;
@@ -114,8 +114,9 @@
     }
   </style>
   <script>
+    var toggle = getElementById("burgIcon");
+
     function openBurger() {
-      var toggle = getElementById("burgIcon");
       toggle.classList.add("toggle");
       document.getElementById("burger").style.width = "100%";
       document.getElementById("burgIcon").style.opacity = "0";
