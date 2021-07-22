@@ -28,6 +28,7 @@
       <a href="/contact">Contact</a>
     </div>
   </div>
+
   <div
     id="burgIcon"
     style="font-size: 30px; cursor: pointer"
@@ -115,9 +116,9 @@
     }
   </style>
   <script>
-    var toggle1 = getElementByClassName("line1");
-    var toggle2 = getElementByClassName("line2");
-    var toggle3 = getElementByClassName("line3");
+    var toggle1 = document.getElementsByClassName("line1");
+    var toggle2 = document.getElementsByClassName("line2");
+    var toggle3 = document.getElementsByClassName("line3");
 
     function openBurger() {
       toggle1.classList.add("toggle1");
