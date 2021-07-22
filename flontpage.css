@@ -30,11 +30,12 @@ section {
   z-index: 10;
 }
 #myself {
-  font-size: 72px;
+  font-size: 6.7vw;
   color: darkblue;
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   margin-top: 15%;
+  margin-left: 6%;
   opacity: 1;
 }
 
@@ -469,7 +470,7 @@ section {
     width: 0;
   }
   to {
-    width: 11em;
+    width: 90%;
   }
 }
 

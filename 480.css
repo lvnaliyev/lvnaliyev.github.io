@@ -1,12 +1,9 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
   #myself {
-    font-size: 40px;
-    color: darkblue;
-    text-align: center;
+    font-size: 6vw;
     letter-spacing: 4px;
-    margin-top: 34%;
-    opacity: 1;
-    width: 11em;
+    margin-top: 35%;
+    margin-left: 10%;
   }
   .rine-1 {
     border-right: 1px solid rgba(25, 25, 25, 0.904);
@@ -25,7 +22,7 @@
       width: 0;
     }
     to {
-      width: 11em;
+      width: 90%;
     }
   }
 

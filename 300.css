@@ -1,12 +1,8 @@
 @media screen and (max-width: 480px) {
   #myself {
-    font-size: 33px;
-    color: darkblue;
-    text-align: center;
-    letter-spacing: 4px;
-    margin-top: 25%;
-    opacity: 1;
-    width: 10em;
+    font-size: 5vw;
+    letter-spacing: 3px;
+    margin-top: 54%;
   }
   #welcome {
     position: fixed;
@@ -168,7 +164,7 @@
       width: 0;
     }
     to {
-      width: 10em;
+      width: 90%;
     }
   }
 
