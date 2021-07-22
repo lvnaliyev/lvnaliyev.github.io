@@ -70,7 +70,7 @@
       z-index: 99;
       top: 0;
       left: 0;
-      background-color: rgba(0.01, 0.01, 0.01, 0.9);
+      background-color: rgba(0.01, 0.01, 0.01, 0.5);
       overflow-x: hidden;
       transition: 0.6s ease-in-out;
     }
@@ -121,14 +121,12 @@
       document.querySelector(".line2").classList.add("toggle2");
       document.querySelector(".line3").classList.add("toggle3");
       document.getElementById("burger").style.width = "100%";
-      document.getElementById("burgIcon").style.opacity = "0";
     }
     function closeBurger() {
       document.querySelector(".line1").classList.remove("toggle1");
       document.querySelector(".line2").classList.remove("toggle2");
       document.querySelector(".line3").classList.remove("toggle3");
       document.getElementById("burger").style.width = "0%";
-      document.getElementById("burgIcon").style.opacity = "1";
     }
   </script>
 
