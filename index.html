@@ -25,6 +25,7 @@
       <script type="text/javascript" src="/jquery.horizonScroll.js"></script>
       <script type="text/javascript" src="/jquery.touchSwipe.js"></script>
     </head>
+
     <div id="myself" class="rine-1 anim-typewriter">Welcome to my website!</div>
     <script>
       var preloader = document.getElementById("myself");
@@ -34,37 +35,44 @@
     </script>
 
     <style>
-      #welcome {
+      #myself {
         position: fixed;
         top: 25%;
-        left: 40%;
-        opacity: 1;
-        font-size: 75px;
-        color: white;
-        animation: spin 5s ease-in-out;
+        left: 25%;
+        font-size: 6.7vw;
+        color: darkblue;
+        text-align: center;
+        letter-spacing: 2px;
       }
 
-      @keyframes spin {
-        0% {
-          opacity: 0;
+      .rine-1 {
+        border-right: 1px solid rgba(25, 25, 25, 0.904);
+        white-space: nowrap;
+        overflow: hidden;
+        color: blue;
+      }
+      /* Animation */
+      .anim-typewriter {
+        animation: typewriter 5s steps(44) 1s 1 normal both,
+          blinkTextCursor 1s steps(40) infinite;
+      }
+
+      @keyframes typewriter {
+        from {
+          width: 0;
         }
-        50% {
-          opacity: 0.3;
-        }
-        100% {
-          opacity: 1;
+        to {
+          width: 90%;
         }
       }
 
-      #preloader {
-        height: 100%;
-        width: 100%;
-        background: rgba(0, 0, 0, 1);
-        z-index: 9999;
-        transition: opacity 6s ease-out;
-        position: fixed;
-        left: 0;
-        top: 0;
+      @keyframes blinkTextCursor {
+        from {
+          border-right-color: transparent;
+        }
+        to {
+          border-right-color: rgb(70, 69, 69);
+        }
       }
 
       .preloader-done {
