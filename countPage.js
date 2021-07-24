@@ -42,7 +42,7 @@ $(window).scroll(function () {
       //alert("1です");
       cntpage.innerHTML = "3 / 3";
       subtextbox.innerHTML =
-        "<div class='p20'><div class='p20p1'> <div class='skills'> <h1> Front end Developer </h1> <h2> Programming Skills </h2><ul> <li id='first' data-tooltip-first='2 years experience'> JavaScript </li> <li id='second' data-tooltip-second='5 years experience' > HTML, CSS </li><li id='third' data-tooltip-third='2 years experience'> jQuery </li> <li id='fourth' data-tooltip-fourth='7 month experience'> React Native </li> </ul>  <h2> Designing Skills </h2> <ul> <li id='five' data-tooltip-five='5 years experience'> Adobe Photoshop </li><li id='six' data-tooltip-six='5 years experience'> Adobe Illustrator </li></ul> </div></div><div class='scrolldown'></div><div class='dot'></div></div>";
+        "<div class='p20'><div class='p20p1'> <div class='skills'> <h1>My Skills</h1><p>HTML</p><div class='container'><div class='skills html'>90%</div></div><p>CSS</p><div class='container'><div class='skills css'>80%</div></div><p>JavaScript</p><div class='container'><div class='skills js'>65%</div></div><p>jQuery</p><div class='container'><div class='skills jquery'>60%</div></div></div></div><div class='scrolldown'></div><div class='dot'></div></div>";
       element.className = "line40";
     }
   }, 100);
