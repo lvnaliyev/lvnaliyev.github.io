@@ -316,7 +316,7 @@ section {
   background: white;
   animation: p10back 1.8s ease-out;
 }
-.skills {
+/* .skills {
   margin-top: 30px;
 }
 
@@ -423,7 +423,7 @@ section {
   text-align: left;
   background-color: white;
   filter: drop-shadow(0px 1px 3px rgba(82, 65, 65, 0.7));
-}
+} */
 
 /* 3rd page skill bar*/
 .container {
