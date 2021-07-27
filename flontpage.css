@@ -307,7 +307,7 @@ label {
   cursor: pointer;
 }
 
-input {
+.accordion {
   display: none;
 }
 
