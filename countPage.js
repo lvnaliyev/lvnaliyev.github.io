@@ -3,7 +3,7 @@ window.onload = function () {
   subtextbox.innerHTML =
     "<div class='p0cover'> <div class='bg'><div class='apBg apBg01'></div><div class='apBg apBg02'></div><div class='apBg apBg03'></div><div class='apBg apBg04'></div><div class='apBg apBg05'></div><div class='apBg apBg06'></div><div class='apBg apBg07'></div></div></div><div class='scrolldown'></div><div class='dot'></div></div>";
   element.className = "line";
-  var cecktest = ""; //text
+  var cecktest = "";
 };
 
 var timer = false;
