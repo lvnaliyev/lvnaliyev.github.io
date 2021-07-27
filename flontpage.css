@@ -41,6 +41,17 @@ section {
   background-image: url(/img/lvn4.jpg);
 }
 
+#myphoto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(40, 40, 45, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 #section-section2 {
   z-index: 10;
 }
