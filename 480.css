@@ -1,4 +1,13 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  p1t span {
+    font-size: 30px;
+  }
+
+  p1 p {
+    position: fixed;
+    top: 47%;
+  }
+
   #myself {
     position: relative;
     top: 25%;
