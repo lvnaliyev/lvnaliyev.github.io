@@ -293,6 +293,11 @@ section {
 }
 
 /* CERTIFICATE MENU */
+.certif {
+  text-align: center;
+  margin-top: 3%;
+}
+
 .cmenu {
   max-width: 600px;
   margin: 0 auto;
