@@ -290,7 +290,7 @@ section {
 .menu img {
   display: block;
   padding: 10px;
-  height: 100%;
+  width: 42%;
   text-decoration: none;
   color: #000;
   line-height: 1;
