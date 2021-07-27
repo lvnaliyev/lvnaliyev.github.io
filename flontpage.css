@@ -578,11 +578,15 @@ label {
   box-shadow: 0 0 84px #000;
   background: #fff;
 }
-
+.apBg p {
+  text-align: center;
+  position: relative;
+  top: 45%;
+  color: rgb(51, 1, 1);
+}
 .apBg01 {
   top: -68.5px;
   left: 127.5px;
-
   animation: bg1 5s linear, bg 32s infinite linear 5s;
 }
 
