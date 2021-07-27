@@ -47,8 +47,8 @@
           var ldr = function () {
             $(".loader span").html(num + "%");
 
-            if (num > 100) {
-              break;
+            if (num == 99) {
+              loading();
             }
             num = num + 3;
           };
