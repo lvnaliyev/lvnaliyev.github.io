@@ -34,22 +34,17 @@
     <script>
       var preloader = document.getElementById("preloader");
       window.addEventListener("load", function () {
-        // Set the percentage off
         loading();
-
         preloader.classList.add("preloader-done");
       });
 
       function loading() {
         var num = 0;
-
         for (i = 0; i <= 100; i++) {
-          function mine() {
-            $(".loader span").html(num + "%");
-            num = num + 3;
-            if (num == 99) {
-              num = 0;
-            }
+          $(".loader span").html(num + "%");
+          num = num + 3;
+          if (num > 100) {
+            num = 1;
           }
         }
       }
