@@ -29,12 +29,41 @@
       <div id="myself" class="rine-1 anim-typewriter">
         Welcome to my website!
       </div>
+      <div class="loader">
+        <span></span>
+      </div>
     </div>
     <script>
       var preloader = document.getElementById("preloader");
       window.addEventListener("load", function () {
+        var counter = 0;
+
+        setInterval(function () {
+          if (counter == 9) {
+            counter = 0;
+          }
+        }, 3000);
+
+        // Set the percentage off
+        loading();
+
         preloader.classList.add("preloader-done");
       });
+
+      function loading() {
+        var num = 0;
+
+        for (i = 0; i <= 100; i++) {
+          setTimeout(function () {
+            $(".loader span").html(num + "%");
+
+            if (num == 100) {
+              loading();
+            }
+            num++;
+          }, i * 120);
+        }
+      }
     </script>
 
     <style>
@@ -56,6 +85,25 @@
         color: darkblue;
         text-align: center;
         letter-spacing: 2px;
+      }
+
+      .loader {
+        width: 100px;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      .loader span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
       }
 
       .rine-1 {
