@@ -44,14 +44,14 @@
         var num = 0;
 
         for (i = 0; i <= 100; i++) {
-          setTimeout(function () {
+          var ldr = function () {
             $(".loader span").html(num + "%");
 
             if (num == 100) {
               loading();
             }
             num = num + 3;
-          }, i * 100);
+          };
         }
       }
     </script>
