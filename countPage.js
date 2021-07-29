@@ -27,7 +27,7 @@ $(window).scroll(function () {
     if (resultcunt == "0") {
       cntpage.innerHTML = "1 / 3";
       subtextbox.innerHTML =
-        "<div class='p0cover'><div class='bg'><div class='apBg apBg01'></div><div class='apBg apBg02'></div><div class='apBg apBg03'></div><div class='apBg apBg04'></div><div class='apBg apBg05'></div><div class='apBg apBg06'></div><div class='apBg apBg07'></div></div></div><div class='scrolldown'></div><div class='dot'></div></div>";
+        "<div class='p0cover'> <div class='bg'><div class='apBg apBg01'><p>JavaScript</p></div><div class='apBg apBg02'><p>HTML</p></div><div class='apBg apBg03'><p>CSS/SCSS</p></div><div class='apBg apBg04'><p>jQuery</p></div><div class='apBg apBg05'><p>React</p></div><div class='apBg apBg06'><p>React-Native</p></div><div class='apBg apBg07'><p>Vue</p></div></div></div><div class='scrolldown'></div><div class='dot'></div></div>";
       element.className = "line";
     } else if (resultcunt == "1") {
       cntpage.innerHTML = "2 / 3";
