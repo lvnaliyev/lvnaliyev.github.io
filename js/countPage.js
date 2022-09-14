@@ -37,12 +37,6 @@ $(window).scroll(function () {
       subtextbox.innerHTML =
         '<object type="text/html" style="overflow:hidden; width: 100%; height: 100%" data="/page3.html"></object>';
       element.className = "line40";
-    } else {
-      cntpage.innerHTML = "1 / 3";
-      subtextbox.innerHTML =
-        '<object type="text/html" style="overflow:hidden; width: 100%; height: 100%" data="/page1.html"></object>';
-      element.className = "line";
-      var cecktest = "";
     }
   }, 100);
 });
