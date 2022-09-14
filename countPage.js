@@ -21,8 +21,7 @@ $(window).scroll(function () {
 
     cecktest = document.getElementById("hoge").innerHTML;
     var resultcunt = cecktest;
-    console.log(typeof resultcunt);
-    console.log(resultcunt);
+   
 
     if (resultcunt == "0") {
       cntpage.innerHTML = "1 / 3";
