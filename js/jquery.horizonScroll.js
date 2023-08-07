@@ -14,6 +14,11 @@
 (function ($) {
   "use strict";
 
+  function updatePageTracking(index) {
+    // This function remains empty here, as it's actually defined in the second file.
+    // The important part is that it's imported to make sure the first file can use it.
+  }
+
   $.fn.horizon = function (options, i) {
     if (options === "scrollLeft") {
       scrollLeft();
@@ -70,19 +75,19 @@
             }
           },
           /*click: function (event, target) {
-                     event.preventDefault();
-                     event.stopPropagation();
-                     event.stopImmediatePropagation();
+                   event.preventDefault();
+                   event.stopPropagation();
+                   event.stopImmediatePropagation();
 
-                     //$(target).click();
-                     },
-                     tap: function (event, target) {
-                     event.preventDefault();
-                     event.stopPropagation();
-                     event.stopImmediatePropagation();
+                   //$(target).click();
+                   },
+                   tap: function (event, target) {
+                   event.preventDefault();
+                   event.stopPropagation();
+                   event.stopImmediatePropagation();
 
-                     $(target).click();
-                     },*/
+                   $(target).click();
+                   },*/
           // Default is 75px, set to 0 for demo so any distance triggers swipe
           threshold: 75,
         });
@@ -101,6 +106,10 @@
 
       return this;
     }
+
+    $.fn.horizon.defaults.i = 0;
+    sizeSections();
+    scrollTo(0, 0);
   };
 
   $.fn.horizon.defaults = {
@@ -132,24 +141,50 @@
     }
   }
 
-  // HTML animate does not work in webkit. BODY does not work in opera.
-  // For animate, we must do both.
-  // http://stackoverflow.com/questions/8790752/callback-of-animate-gets-called-twice-jquery
-  var scrollTo = function (index, speed) {
-    if (index > $.fn.horizon.defaults.limit - 1 || index < 0) {
-      console.log(
-        "Scroll where? I think you want me to go out of my limits. Sorry, no can do."
+  var scrollLeft = function () {
+    console.log("Scroll left" + $.fn.horizon.defaults.limit);
+
+    var i2 = $.fn.horizon.defaults.i - 1;
+
+    if (i2 < 0) {
+      // If on the first page and scrolling left, jump to the last page.
+      scrollTo(
+        $.fn.horizon.defaults.limit - 1,
+        $.fn.horizon.defaults.scrollDuration
       );
-      return;
+    } else {
+      scrollTo(i2, $.fn.horizon.defaults.scrollDuration);
     }
+  };
+
+  var scrollRight = function () {
+    console.log("Scroll right" + $.fn.horizon.defaults.limit);
+
+    var i2 = $.fn.horizon.defaults.i + 1;
+
+    if (i2 >= $.fn.horizon.defaults.limit) {
+      // If on the last page and scrolling right, jump to the first page.
+      scrollTo(0, $.fn.horizon.defaults.scrollDuration);
+    } else {
+      scrollTo(i2, $.fn.horizon.defaults.scrollDuration);
+    }
+  };
+
+  var scrollTo = function (index, speed) {
+    // if (index > $.fn.horizon.defaults.limit - 1 || index < 0) {
+    //   console.log(
+    //     "Scroll where? I think you want me to go out of my limits. Sorry, no can do."
+    //   );
+    //   return;
+    // }
 
     console.log("Scroll to: " + index);
 
-    //insert code
-    var cuntTest = Number(index);
-    //sample code send html
-    $("#hoge").html(cuntTest);
-    //end
+    // Insert code
+    var currentIndex = Number(index);
+    // Sample code send html
+    $("#hoge").html(currentIndex);
+    // End
 
     $.fn.horizon.defaults.i = index;
 
@@ -162,41 +197,24 @@
     );
 
     if (index === 0) {
-      $(".horizon-prev").hide();
+      $(".horizon-prev").on("click", function () {
+        scrollTo(
+          $.fn.horizon.defaults.limit - 1,
+          $.fn.horizon.defaults.scrollDuration
+        ); // Loop to the last section
+      });
       $(".horizon-next").show();
     } else if (index === $.fn.horizon.defaults.limit - 1) {
       $(".horizon-prev").show();
-      $(".horizon-next").hide();
+      $(".horizon-next").on("click", function () {
+        scrollTo(0, $.fn.horizon.defaults.scrollDuration); // Loop back to the first section
+      });
     } else {
       $(".horizon-next").show();
       $(".horizon-prev").show();
     }
-  };
 
-  // ... existing code ...
-
-  var scrollLeft = function () {
-    console.log("Scroll left");
-
-    var i2 = $.fn.horizon.defaults.i - 1;
-
-    if (i2 < 0) {
-      i2 = $.fn.horizon.defaults.limit - 1; // Loop to the last section
-    }
-
-    scrollTo(i2, $.fn.horizon.defaults.scrollDuration);
-  };
-
-  var scrollRight = function () {
-    console.log("Scroll right");
-
-    var i2 = $.fn.horizon.defaults.i + 1;
-
-    if (i2 >= $.fn.horizon.defaults.limit) {
-      i2 = 0; // Loop back to the first section
-    }
-
-    scrollTo(i2, $.fn.horizon.defaults.scrollDuration);
+    updatePageTracking(index);
   };
 
   // Executes on 'scrollbegin'.
@@ -240,7 +258,7 @@
     $("html").width($.fn.horizon.defaults.limit * iInnerWidth);
 
     // Scroll to current section without animation.
-    scrollTo($.fn.horizon.defaults.i, 0);
+    // scrollTo($.fn.horizon.defaults.i, 0);
   };
 
   var scrolls = {
