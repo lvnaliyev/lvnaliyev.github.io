@@ -1,99 +1,99 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="0" />
-    <meta http-equiv="pragma" content="no-cache" />
-    <link href="css/flontpage.css" rel="stylesheet" type="text/css" />
-    <link href="css/menu.css" rel="stylesheet" type="text/css" />
-    <link href="css/preloader.css" rel="stylesheet" type="text/css" />
-
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 480px)"
-      href="css/300.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 481px) and (max-width: 768px)"
-      href="css/480.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 769px) and (max-width: 1200px)"
-      href="css/768.css"
-    />
-    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
-    <script type="text/javascript" src="js/countPage.js"></script>
-    <script type="text/javascript" src="js/jquery.horizonScroll.js"></script>
-  </head>
-  <div id="preloader">
-    <div id="myself" class="rine-1 anim-typewriter">LOADING!...</div>
-    <div class="loader">
-      <span></span>
-    </div>
-  </div>
-  <script>
-    var preloader = document.getElementById("preloader");
-    window.addEventListener("load", function () {
-      loading();
-      preloader.classList.add("preloader-done");
-    });
-
-    function loading() {
-      var num = 0;
-
-      for (i = 0; i <= 100; i++) {
-        setTimeout(function () {
-          $(".loader span").html(num + "%");
-
-          if (num >= 100) {
-            loading();
-          }
-          num++;
-        }, i * 50);
-      }
-    }
-  </script>
-
-  <div id="warpper">
-    <div id="myphoto"></div>
-    <div class="outer-menu">
-      <input class="checkbox-toggle" type="checkbox" />
-      <div class="hamburger">
-        <div></div>
+  <html>
+    <head>
+      <meta http-equiv="cache-control" content="no-cache" />
+      <meta http-equiv="expires" content="0" />
+      <meta http-equiv="pragma" content="no-cache" />
+      <link href="css/flontpage.css" rel="stylesheet" type="text/css" />
+      <link href="css/menu.css" rel="stylesheet" type="text/css" />
+      <link href="css/preloader.css" rel="stylesheet" type="text/css" />
+      <link
+        rel="stylesheet"
+        media="screen and (max-width: 480px)"
+        href="css/300.css"
+      />
+      <link
+        rel="stylesheet"
+        media="screen and (min-width: 481px) and (max-width: 768px)"
+        href="css/480.css"
+      />
+      <link
+        rel="stylesheet"
+        media="screen and (min-width: 769px) and (max-width: 1200px)"
+        href="css/768.css"
+      />
+      <script type="text/javascript" src="/js/jquery-1.10.2.js"></script>
+      <script type="text/javascript" src="js/jquery.horizonScroll.js"></script>
+      <script type="text/javascript" src="/js/jquery.touchSwipe.js"></script>
+    </head>
+    <div id="preloader">
+      <div id="myself" class="rine-1 anim-typewriter">LOADING!...</div>
+      <div class="loader">
+        <span></span>
       </div>
-      <div class="menu">
-        <div>
+    </div>
+    <script>
+      var preloader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loading();
+        preloader.classList.add("preloader-done");
+      });
+
+      function loading() {
+        var num = 0;
+
+        for (i = 0; i <= 100; i++) {
+          setTimeout(function () {
+            $(".loader span").html(num + "%");
+
+            if (num >= 100) {
+              loading();
+            }
+            num++;
+          }, i * 50);
+        }
+      }
+    </script>
+    <!-- cubic-bezier(0, 1.58, 1, -0.02) -->
+    <!-- cubic-bezier(0, 0.86, 0, -0.12) -->
+
+    <div id="warpper">
+      <div id="myphoto"></div>
+      <div class="outer-menu">
+        <input class="checkbox-toggle" type="checkbox" />
+        <div class="hamburger">
+          <div></div>
+        </div>
+        <div class="menu">
           <div>
-            <ul>
-              <li><a href="/about">About me</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
+            <div>
+              <ul>
+                <li><a href="/about">About me</a></li>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+
+      <section data-role="section" id="section-section1"></section>
+      <section data-role="section" id="section-section2"></section>
+      <section data-role="section" id="section-section3"></section>
+
+      <script type="text/javascript">
+        $("section").horizon();
+      </script>
     </div>
 
-    <section data-role="section" id="section-section1"></section>
-    <section data-role="section" id="section-section2"></section>
-    <section data-role="section" id="section-section3"></section>
-
-    <script type="text/javascript">
-      $("section").horizon();
-    </script>
-  </div>
-
-  <div id="pgcnt">
-    <div id="hoge"></div>
-    <div id="cntpage"><!-- Count Page View --></div>
-    <div class="line" id="target"></div>
-    <div class="bar"></div>
-    <div id="subtextbox"></div>
-  </div>
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
-  <!-- <script type="text/javascript" src="js/countPage.js"></script> -->
-  <!-- <script type="text/javascript" src="js/jquery.horizonScroll.js"></script> -->
+    <div id="pgcnt">
+      <div id="hoge"></div>
+      <div id="cntpage"><!-- Count Page View --></div>
+      <div class="line" id="target"></div>
+      <div class="bar"></div>
+      <div id="subtextbox"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/countPage.js"></script>
+  </html>
 </html>
